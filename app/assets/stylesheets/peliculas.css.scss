@@ -1,0 +1,250 @@
+// Place all the styles related to the peliculas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cabecera
+    {
+        background-color: #d0d0ff;
+        color: #333300;
+        font-size:12pt;
+        font-weight: bold;
+        padding: 3 3 3 10px;
+        input{
+            width: 600px ;
+        }
+    }
+.contenedor1
+    {
+        //margin-top: 5px;
+        background-color: #D6D6D6;
+        border: 2px solid ;
+        text-align: left;
+        width: 1024px;
+        //margin: auto;
+    }
+.izquierdoesp
+    {
+        width: 330px;
+        //background-color: #999999;
+        float:left;
+    }
+
+.izquierdo
+    {
+        width: 330px;
+        //background-color: #999999;
+        float:left;
+        label
+        {
+            display:block;
+            float: left ;
+            width: 95px ;
+            //text-align:right ;
+            padding-right: 10px ;
+        }
+        input{
+            width: 210px ;
+        }
+    }
+.izquierdo ul
+    {
+        margin : 0 0 0 0px;
+        padding: 0 0 0 0px;
+        list-style: none;
+    }
+.izquierdo li
+    {
+        background-color: #ffffcc;
+        margin: 2 2 2 2px;
+        padding: 2 2 2 2px;
+        font-weight: bold;
+    }
+.izquierdo a
+    {
+        color: #3333cc;
+        text-decoration: none;
+    }
+
+.izquierdoesp ul
+    {
+        margin : 0 0 0 0px;
+        padding: 0 0 0 0px;
+        list-style: none;
+    }
+.izquierdoesp li
+    {
+        background-color: #ffffcc;
+        margin: 2 2 2 2px;
+        padding: 2 2 2 2px;
+        font-weight: bold;
+    }
+.izquierdoesp a
+    {
+        color: #3333cc;
+        text-decoration: none;
+    }
+
+.derecho
+    {
+        width: 330px;
+        //background-color: #999999;
+        float: right;
+
+        label
+        {
+            display:block;
+            float: left ;
+            width: 95px ;
+            //text-align:right ;
+            padding-right: 10px ;
+        }
+        input{
+            width: 210px ;
+        }
+    }
+.derechoesp
+    {
+        width: 330px;
+        //background-color: #999999;
+        float: right;
+    }
+.centro
+    {
+        margin-left: 345px;
+        //background-color: #ffffff;
+        padding: 4 4 4 4px;
+        width: 330px;
+        label
+        {
+            display:block;
+            float: left ;
+            width: 95px ;
+            //text-align:left ;
+            padding-right: 10px ;
+        }
+        input{
+            width: 210px ;
+        }
+    }
+
+.centroesp
+    {
+        margin-left: 345px;
+        //background-color: #ffffff;
+        padding: 4 4 4 4px;
+        width: 330px;
+        label
+        {
+            display:block;
+            float: left ;
+            width: 95px ;
+            //text-align:right ;
+            padding-right: 10px ;
+        }
+    }
+
+.contenedor2
+    {
+        margin-top: 5px;
+        background: #D6D6D6 ;
+        border: 1px solid ;
+        width: 1024px ;
+    }
+.columna1
+    {
+        width: 42%;
+        float:left;
+    }
+.columna2
+    {
+        width: 58%;
+        float: right;
+        input{
+            width: 80px ;
+        }
+    }
+.contenedor3
+    {
+        margin-top: 5px;
+        background: #D6D6D6 ;
+        border: 1px solid ;
+        width: 1024px ;
+    }
+.contenedor4
+    {
+        margin-top: 5px;
+        background: #D6D6D6 ;
+        border: 1px solid ;
+        width: 1024px ;
+        height: 150px ;
+    }
+.contenedor5
+    {
+        //margin-top: 5px
+        //background: #D6D6D6 ;
+        //border: 1px solid ;
+        width: 500px ;
+        height: auto ;
+    }
+.lateral_esp
+    {
+        width: 225px;
+        //background-color: #999999;
+        //float:left;
+        display: inline-block;
+
+    }
+.otrolado_esp
+    {
+        width: 225px;
+        //background-color: #999999;
+        //float: right;
+        display: inline-block;
+    }
+.principal_esp
+    {
+        //margin-left: 230px;
+        //background-color: #ffffff;
+        padding: 4 4 4 4px;
+        width: 540px;
+        display: inline-block;
+
+    }
+.contenedorDg
+    {
+        margin-top: 5px;
+        background-color: #D6D6D6;
+        border: 1px solid ;
+        text-align: left;
+        width: 1024px;
+        height: 390px ;
+    }
+.col1dgCliente
+    {
+        width: 60%;
+        float:left;
+    }
+.col2dgCliente
+    {
+        width: 40%;
+        float: right;
+    }
+
+.contenedorEnlaces
+    {
+        margin-top: 5px;
+        background-color: #D6D6D6;
+        border: 1px solid ;
+        width: 1024px;
+        height: 570px ;
+    }
+.col1Enlaces
+    {
+        width: 48%;
+        float:left;
+    }
+.col2Enlaces
+    {
+        width: 48%;
+        float: right;
+    }

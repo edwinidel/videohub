@@ -1,0 +1,138 @@
+<%= form_for(@pelicula) do |f| %>
+  <% if @pelicula.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pelicula.errors.count, "error") %> prohibited this pelicula from being saved:</h2>
+
+      <ul>
+      <% @pelicula.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class ="contenedor1">
+  <div class= "cabecera">
+    <div class="field">
+      <%= f.label :Título %>
+      <%= f.text_field :cnombre %>
+    </div>
+  </div>
+    <% generos = {
+      'Drama' => 'drama',
+      'Acción' => 'accion',
+      'Suspenso' => 'susp',
+      'Animado' => 'anime',
+      'Manga' => 'manga',
+      'Vaqueros' => 'oeste',
+      'Adultos' => 'adult',
+      'Infantiles' => 'infant',
+    } %>
+
+    <div class="izquierdo">
+      <div class="field">
+        <%= f.label :Género %>
+        <%= f.select :cgenero,generos %>
+      </div>
+      <div class="field">
+        <%= f.label :Año %>
+        <%= f.text_field :cyear %>
+      </div>
+    </div>
+
+    <div class="derecho">
+      <div class="field">
+        <%= f.label :Ubicacion %>
+        <%= f.text_field :cubicacion %>
+      </div>
+      <div class="field">
+        <%= f.label :Carátula %>
+        <%= f.text_field :ccaratula %>
+      </div>
+    </div>
+
+    <div class="centro"
+      <% clasific = {
+        'Todo Público' => 'G',
+        'Mayores de 10' => 'PG',
+        'Mayores de 13' => 'PG-13',
+        'Menores de 17 acompañados' => 'R',
+        'Mayores de 18' => 'XXX',
+      } %>
+      <div class="field">
+        <%= f.label :Clasificación %>
+        <%= f.select :cclasif,clasific %>
+      </div>
+      <div class="field"> 
+        <%= f.label :Director %>
+        <%= f.text_field :cdirector %>
+      </div>
+      <div class="field">
+        <%= f.label :Productora %>
+        <%= f.text_field :cproductora %>
+      </div>
+    </div>
+
+    <div class="contenedor2">
+      <h3>Actores</h3>
+      <div class="izquierdo">
+        <div class="field">
+          <%= f.label :Actor_01 %>
+          <%= f.text_field :cactor01 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_02 %>
+          <%= f.text_field :cactor02 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_03 %>
+          <%= f.text_field :cactor03 %>
+        </div>
+      </div>
+
+      <div class="derecho">
+        <div class="field">
+          <%= f.label :Actor_08 %>
+          <%= f.text_field :cactor08 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_09 %>
+          <%= f.text_field :cactor09 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_10 %>
+          <%= f.text_field :cactor10 %>
+        </div>
+      </div>
+
+      <div class="centro">
+        <div class="field">
+          <%= f.label :Actor_04 %>
+          <%= f.text_field :cactor04 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_05 %>
+          <%= f.text_field :cactor05 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_06 %>
+          <%= f.text_field :cactor06 %>
+        </div>
+        <div class="field">
+          <%= f.label :Actor_07 %>
+          <%= f.text_field :cactor07 %>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor3">
+      <div class="field">
+        <%= f.label :csinopcis %><br />
+        <%= f.text_area :csinopcis, :cols=>124, :rows=>5  %>
+      </div>
+    </div>
+</div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

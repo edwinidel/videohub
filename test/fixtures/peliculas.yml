@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cnombre: MyString
+  cgenero: MyString
+  cyear: MyString
+  cclasif: MyString
+  cdirector: MyString
+  cproductora: MyString
+  cactor01: MyString
+  cactor02: MyString
+  cactor03: MyString
+  cactor04: MyString
+  cactor05: MyString
+  cactor06: MyString
+  cactor07: MyString
+  cactor08: MyString
+  cactor09: MyString
+  cactor10: MyString
+  cubicacion: MyString
+  ccaratula: MyString
+  csinopcis: MyText
+
+two:
+  cnombre: MyString
+  cgenero: MyString
+  cyear: MyString
+  cclasif: MyString
+  cdirector: MyString
+  cproductora: MyString
+  cactor01: MyString
+  cactor02: MyString
+  cactor03: MyString
+  cactor04: MyString
+  cactor05: MyString
+  cactor06: MyString
+  cactor07: MyString
+  cactor08: MyString
+  cactor09: MyString
+  cactor10: MyString
+  cubicacion: MyString
+  ccaratula: MyString
+  csinopcis: MyText

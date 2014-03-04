@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cNombre: MyString
+  cApellido: MyString
+  dNacim: 2014-03-03
+  cPais: MyString
+  cFoto: MyString
+  cWeb: MyString
+  cTwetter: MyString
+  cFacebook: MyString
+  sSexo: MyString
+  cComenta: 
+
+two:
+  cNombre: MyString
+  cApellido: MyString
+  dNacim: 2014-03-03
+  cPais: MyString
+  cFoto: MyString
+  cWeb: MyString
+  cTwetter: MyString
+  cFacebook: MyString
+  sSexo: MyString
+  cComenta: 

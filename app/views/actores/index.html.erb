@@ -1,0 +1,41 @@
+<h1>Listing actores</h1>
+
+<table>
+  <tr>
+    <th>Cnombre</th>
+    <th>Capellido</th>
+    <th>Dnacim</th>
+    <th>Cpais</th>
+    <th>Cfoto</th>
+    <th>Cweb</th>
+    <th>Ctwetter</th>
+    <th>Cfacebook</th>
+    <th>Ssexo</th>
+    <th>Ccomenta</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @actores.each do |actore| %>
+  <tr>
+    <td><%= actore.cNombre %></td>
+    <td><%= actore.cApellido %></td>
+    <td><%= actore.dNacim %></td>
+    <td><%= actore.cPais %></td>
+    <td><%= actore.cFoto %></td>
+    <td><%= actore.cWeb %></td>
+    <td><%= actore.cTwetter %></td>
+    <td><%= actore.cFacebook %></td>
+    <td><%= actore.sSexo %></td>
+    <td><%= actore.cComenta %></td>
+    <td><%= link_to 'Show', actore %></td>
+    <td><%= link_to 'Edit', edit_actore_path(actore) %></td>
+    <td><%= link_to 'Destroy', actore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Actore', new_actore_path %>

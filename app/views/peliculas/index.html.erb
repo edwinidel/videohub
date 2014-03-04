@@ -1,0 +1,62 @@
+<h1>Listado de Peliculas</h1>
+
+<table>
+    <thead>
+      <tr>
+        <th>Cnombre</th>
+        <th>Cgenero</th>
+        <th>Cyear</th>
+        <th>Cclasif</th>
+        <th>Cdirector</th>
+        <th>Cproductora</th>
+        <th>Cactor01</th>
+        <th>Cactor02</th>
+        <th>Cactor03</th>
+        <th>Cactor04</th>
+        <th>Cactor05</th>
+        <th>Cactor06</th>
+        <th>Cactor07</th>
+        <th>Cactor08</th>
+        <th>Cactor09</th>
+        <th>Cactor10</th>
+        <th>Cubicacion</th>
+        <th>Ccaratula</th>
+        <th>Csinopcis</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @peliculas.each do |pelicula| %>
+          <tr>
+            <td><%= link_to(pelicula.cnombre, pelicula) %></td>
+            <td><%= pelicula.cgenero %></td>
+            <td><%= pelicula.cyear %></td>
+            <td><%= pelicula.cclasif %></td>
+            <td><%= pelicula.cdirector %></td>
+            <td><%= pelicula.cproductora %></td>
+            <td><%= pelicula.cactor01 %></td>
+            <td><%= pelicula.cactor02 %></td>
+            <td><%= pelicula.cactor03 %></td>
+            <td><%= pelicula.cactor04 %></td>
+            <td><%= pelicula.cactor05 %></td>
+            <td><%= pelicula.cactor06 %></td>
+            <td><%= pelicula.cactor07 %></td>
+            <td><%= pelicula.cactor08 %></td>
+            <td><%= pelicula.cactor09 %></td>
+            <td><%= pelicula.cactor10 %></td>
+            <td><%= pelicula.cubicacion %></td>
+            <td><%= pelicula.ccaratula %></td>
+            <td><%= pelicula.csinopcis %></td>
+            <td><%= link_to 'Mostrar', pelicula %></td>
+            <td><%= link_to 'Editar', edit_pelicula_path(pelicula) %></td>
+            <td><%= link_to 'Borrar', pelicula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<br />
+
+<%= link_to 'Nueva Pelicula', new_pelicula_path %>

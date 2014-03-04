@@ -1,0 +1,61 @@
+<%= form_for(@actore) do |f| %>
+  <% if @actore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@actore.errors.count, "error") %> prohibited this actore from being saved:</h2>
+
+      <ul>
+      <% @actore.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cNombre %><br />
+    <%= f.text_field :cNombre %>
+  </div>
+  <div class="field">
+    <%= f.label :cApellido %><br />
+    <%= f.text_field :cApellido %>
+  </div>
+  <div class="field">
+    <%= f.label :dNacim %><br />
+    <%= f.date_select :dNacim %>
+  </div>
+  <div class="field">
+    <%= f.label :cPais %><br />
+    <%= f.text_field :cPais %>
+  </div>
+  <div class="field">
+    <%= f.label :cFoto %><br />
+    <%= f.text_field :cFoto %>
+  </div>
+  <div class="field">
+    <%= f.label :cWeb %><br />
+    <%= f.text_field :cWeb %>
+  </div>
+  <div class="field">
+    <%= f.label :cTwetter %><br />
+    <%= f.text_field :cTwetter %>
+  </div>
+  <div class="field">
+    <%= f.label :cFacebook %><br />
+    <%= f.text_field :cFacebook %>
+  </div>
+      <% sexo = {
+        'Hombre' => 'H',
+        'Mujer' => 'M',
+      } %>
+  <div class="field">
+    <%= f.label :sSexo %><br />
+    <%= f.select :sSexo, sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :cComenta %><br />
+    <%= f.text_field :cComenta %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
